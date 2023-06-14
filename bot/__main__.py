@@ -8,8 +8,6 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 from aiogram.fsm.context import FSMContext
-
-from bot.fsm.set_channel_states import SetChannelState
 from bot.utils.config import settings
 
 import bot.utils.redis as redis_db
