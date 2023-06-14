@@ -10,6 +10,7 @@ packages = [{include = "tracker_bot"}]
 python = "^3.9"
 aiogram = {git = "https://github.com/aiogram/aiogram", branch = "dev-3.x"}
 python-dotenv = "^1.0.0"
+redis = "^4.5.5"
 
 [build-system]
 requires = ["poetry-core"]

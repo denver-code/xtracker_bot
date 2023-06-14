@@ -1,0 +1,21 @@
+version: '3'
+services:
+  tracker_bot:
+    depends_on:
+      - redis
+    build: .
+    volumes:
+      - .:/tracker_bot
+    environment:
+      - TZ=Europe/London
+
+  redis:
+    image: redis:6-alpine
+    restart: on-failure
+    volumes:
+      - redis-db:/data
+    ports:
+      - 6666:6379
+
+volumes:
+  redis-db:
