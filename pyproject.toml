@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["denver-code <csigorek@gmail.com>"]
 readme = "README.md"
-packages = [{include = "tracker_bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
